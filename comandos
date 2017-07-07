@@ -1,0 +1,40 @@
+    
+Instalar mysql:
+
+sudo apt-get update
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+
+systemctl status mysql.service
+
+
+Instalar python 2.7:
+
+sudo apt-get install build-essential checkinstall
+$ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+$ cd /usr/src
+sudo wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
+sudo tar xzf Python-2.7.13.tgz
+$ cd Python-2.7.13
+$ sudo ./configure
+$ sudo make altinstall
+
+Instalar django:
+
+sudo apt-get install python-pip
+sudo apt-get install libmysqlclient-dev
+pip install mysqlclient
+sudo apt install python-django-common
+sudo apt-get install python-django
+
+Crear un proyecto:
+
+django-admin startproject mysite
+python manage.py startapp polls
+
+python manage.py runserver
+
+Instalar php-myadmin:
+
+
+
