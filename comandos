@@ -26,6 +26,7 @@ sudo apt-get install libmysqlclient-dev
 pip install mysqlclient
 sudo apt install python-django-common
 sudo apt-get install python-django
+pip install lxml
 
 Crear un proyecto:
 
@@ -34,7 +35,56 @@ python manage.py startapp polls
 
 python manage.py runserver
 
-Instalar php-myadmin:
+
+Instalación apache2:
+
+sudo apt-get install apache2
+service apache2 restart
+service apache2 stop
+service apache2 start
+
+Instalación phpmyadmin:
+
+apt-get install phpmyadmin
+en /etc/apache2/apache2.conf añadir: Include /etc/phpmyadmin/apache.conf
+service apache2 restart
+http://localhost/phpmyadmin/
+http://127.0.0.1/phpmyadmin/
+
+
+Comandos inicializacion de proyecto:
+
+pip install lxml
+pip install suds
+pip install xmltodict
+pip install pymysql
+pip install Imaging-1.1.7.tar.gz
+pip install django_messages
+pip install django-contrib-comments
+pip install requests
+pip install django-tinymce
+pip install social-auth-app-django
+
+modificado storage_engine default_storage_engine
+
+
+Git commands:
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+Ver puertos:
+
+sudo netstat -lp --inet 
+fuser 8000/tcp
+fuser -k 8080/tcp
+
+
+
+
+
+
+
 
 
 
