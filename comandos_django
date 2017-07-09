@@ -1,0 +1,45 @@
+Entornos virtuales:
+
+sudo pip install virtualenv
+virtualenv miproyecto
+source miproyecto/bin/activate
+
+Instalación de paquetes:
+
+pip intall paquete
+pip uninstall paquete
+pip install paquete --upgrade -> para actualizar
+pip freeze --local -> ver dependencias locales
+pip install -r requirements/local.txt
+
+Instalar django:
+
+sudo apt-get install python-pip
+sudo apt-get install libmysqlclient-dev
+pip install mysqlclient
+sudo apt install python-django-common
+sudo apt-get install python-django
+pip install lxml
+
+Crear un proyecto:
+
+django-admin startproject mysite
+python manage.py startapp polls
+python manage.py runserver
+python manage.py runserver --settings=miproyecto.settings.local
+
+Estructura del proyecto:
+
+-Directorio principal
+	.gitignore
+	README.md
+	requirements.txt
+	-miproyecto
+		manage.py
+		-apps
+		-media
+		-static
+		-templates
+		-miproyecto
+
+
