@@ -1,0 +1,22 @@
+Apache:
+
+sudo apachectl start
+sudo apachectl stop
+sudo apachectl restart
+httpd -v -> ver versión de Apache
+apachectl configtest -> ver estado de apache
+
+Ubicación webs apache: /Library/WebServer/Documents/
+
+Mysql:
+
+sudo /usr/local/mysql/support-files/mysql.server stop
+sudo mysqld_safe --skip-grant-tables
+mysql -u root
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+sudo /usr/local/mysql/support-files/mysql.server start
+
+Django:
+
+python manage.py createsuperuser -> Crear superusuario

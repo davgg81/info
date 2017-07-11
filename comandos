@@ -23,6 +23,7 @@ Instalar django:
 
 sudo apt-get install python-pip
 sudo apt-get install libmysqlclient-dev
+En Mac: export PATH=$PATH:/usr/local/mysql/bin
 pip install mysqlclient
 sudo apt install python-django-common
 sudo apt-get install python-django
@@ -64,8 +65,10 @@ pip install django-contrib-comments
 pip install requests
 pip install django-tinymce
 pip install social-auth-app-django
+pip install pycrypto
 
 modificado storage_engine default_storage_engine
+
 
 
 Git commands:
@@ -80,11 +83,4 @@ fuser 8000/tcp
 fuser -k 8080/tcp
 
 
-
-
-
-
-
-
-
-
+root@localhost: 9yw/r?4.4<:T
