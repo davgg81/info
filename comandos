@@ -66,6 +66,7 @@ pip install requests
 pip install django-tinymce
 pip install social-auth-app-django
 pip install pycrypto
+Pip Install tagging
 
 modificado storage_engine default_storage_engine
 

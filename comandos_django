@@ -12,6 +12,9 @@ pip install paquete --upgrade -> para actualizar
 pip freeze --local -> ver dependencias locales
 pip install -r requirements/local.txt
 
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
 Instalar django:
 
 sudo apt-get install python-pip
@@ -19,6 +22,17 @@ sudo apt-get install libmysqlclient-dev
 pip install mysqlclient
 sudo apt install python-django-common
 sudo apt-get install python-django
+
+Entorno virtual:
+sudo pip install virtualenv
+virtualenv miProyecto
+Source miProyecto/bin/activate
+Deactivate
+
+
+
+
+
 pip install lxml
 
 Crear un proyecto:
@@ -42,4 +56,10 @@ Estructura del proyecto:
 		-templates
 		-miproyecto
 
+-Migraciones
+Python manage.py makemigrations
+Python manage.py migrate
+
+-Ver versiones de Django
+django-admin.py version
 
